@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "logo-chat-recording-16.png",
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "logo-chat-recording-32.png",
+      "idiom" : "mac",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+} 

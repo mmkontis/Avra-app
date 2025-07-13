@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.3</string>
+	<key>CFBundleVersion</key>
+	<string>4</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs access to your microphone to monitor audio levels.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>This app needs access to your contacts to provide contact-related features.</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.whisperme.url</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>whisperme</string>
+			</array>
+		</dict>
+	</array>
+	<!-- Sparkle configuration removed - using SimpleUpdateChecker -->
+</dict>
+</plist>

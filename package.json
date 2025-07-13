@@ -1,0 +1,47 @@
+{
+  "name": "whisperme",
+  "version": "1.0.3",
+  "description": "WhisperMe - AI-powered transcription app for macOS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minasmarioskontis/whisperme.git"
+  },
+  "author": "Minas Marios Kontis",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "release": "release-it",
+    "release:ci": "release-it --ci",
+    "build": "./build_and_install.sh",
+    "clean": "./clean_all.sh"
+  },
+  "devDependencies": {
+    "release-it": "^19.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}",
+      "tagName": "v${version}",
+      "requireCleanWorkingDir": false,
+      "requireBranch": "main"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "WhisperMe v${version}",
+      "releaseNotes": "Release notes will be generated from commits",
+      "assets": ["whisperme-${version}-arm64.zip"]
+    },
+    "npm": {
+      "publish": false
+    },
+    "hooks": {
+      "before:init": ["./build_and_install.sh"],
+      "after:bump": "echo 'Version bumped to ${version}'",
+      "before:github:release": "./package_for_distribution.sh ${version}",
+      "after:release": "echo 'Successfully released WhisperMe v${version}!'"
+    }
+  }
+} 

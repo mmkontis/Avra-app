@@ -1,0 +1,1 @@
+Hey Minas, I hope this mail finds you well. I would like to talk about a potential partnership that you may be interested in. So what we do is increasing your sales X time and give you all the revenue upfront. Thoughts? Are you in? I would like to talk more on that with a video call on Friday. Kind regards, Paul Contis 

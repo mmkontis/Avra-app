@@ -1,0 +1,5 @@
+# WhisperMe Backend Dependencies
+# This file is at the root for Sevalla auto-detection
+# The actual app is in whisperme-python/
+
+-r whisperme-python/requirements.txt 
